@@ -1,0 +1,239 @@
+<html>
+
+<head>
+    <style>
+        /* https://codepen.io/rafaelcastrocouto/pen/poyWPO */
+        body {
+            background: rgb(204, 204, 204);
+        }
+
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            /* margin-bottom: 0.5cm; */
+            /* box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5); */
+        }
+
+        page[size="A4"] {
+            width: 21cm;
+            height: 29.7cm;
+        }
+
+        page[size="A4"][layout="landscape"] {
+            width: 29.7cm;
+            height: 21cm;
+        }
+
+        page[size="A3"] {
+            width: 29.7cm;
+            height: 42cm;
+        }
+
+        page[size="A3"][layout="landscape"] {
+            width: 42cm;
+            height: 29.7cm;
+        }
+
+        page[size="A5"] {
+            width: 14.8cm;
+            height: 21cm;
+        }
+
+        page[size="A5"][layout="landscape"] {
+            width: 21cm;
+            height: 14.8cm;
+        }
+
+        @media print {
+
+            body,
+            page {
+                background: white;
+                margin: 0;
+                box-shadow: 0;
+            }
+        }
+
+        #puzzle {
+            
+        }
+
+        #clues {
+            display: flex;
+            font-size: 12px;
+        }
+
+        ol {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <page size="A4" style="padding: 1cm;">
+        <h1>Alexa & Jordan's Crossword</h1>
+        <div id="puzzle">
+            <image src="./crossword.svg">
+        </div>
+        <div id="clues">
+            <div id="across-box">
+                <h5>Across</h5>
+                <ol id="across" class="valid-parent">
+
+                    <li role="button" tabindex="0" id="clue-31" class="" aria-description="11 letters">
+                        <strong>1.</strong> Location of our yearly birthday trip</li>
+
+                    <li role="button" tabindex="0" id="clue-22" aria-description="7 letters" class="">
+                        <strong>4.</strong> One of two old men that mock the Muppets</li>
+
+                    <li role="button" tabindex="0" id="clue-23" aria-description="4 letters" class="">
+                        <strong>6.</strong> Synth envelope params.</li>
+
+                    <li role="button" tabindex="0" id="clue-45" aria-description="5 letters" class="">
+                        <strong>9.</strong> With avocado, cheese, and sour cream</li>
+
+                    <li role="button" tabindex="0" id="clue-20" aria-description="6 letters" class="">
+                        <strong>12.</strong> Nut-based ingredient in Mai Tais</li>
+
+                    <li role="button" tabindex="0" id="clue-17" aria-description="6 letters"><strong>13.</strong>
+                        Privacy-conscious chat app that we exclusively communicate on</li>
+
+                    <li role="button" tabindex="0" id="clue-9" aria-description="13 letters" class="">
+                        <strong>15.</strong> City where we explored the architectural graveyard</li>
+
+                    <li role="button" tabindex="0" id="clue-11" aria-description="13 letters"><strong>16.</strong> City
+                        where our apartment was full of disco balls</li>
+
+                    <li role="button" tabindex="0" id="clue-19" aria-description="5 letters"><strong>19.</strong>
+                        Alexa’s favorite ocean animal</li>
+
+                    <li role="button" tabindex="0" id="clue-6" aria-description="8 letters" class="">
+                        <strong>21.</strong> Name-name of Alexa's family's pet dog</li>
+
+                    <li role="button" tabindex="0" id="clue-27" aria-description="6 letters" class="">
+                        <strong>23.</strong> NYT game Alexa plays before bed every night</li>
+
+                    <li role="button" tabindex="0" id="clue-25" aria-description="12 letters" class="">
+                        <strong>27.</strong> One of three animals on Jordan's tattoo</li>
+
+                    <li role="button" tabindex="0" id="clue-10" aria-description="7 letters"><strong>29.</strong> City
+                        where we had an ocean view</li>
+
+                    <li role="button" tabindex="0" id="clue-32" aria-description="9 letters" class="">
+                        <strong>30.</strong> FX TV show that Alexa holds as the best ever, The _____</li>
+
+                    <li role="button" tabindex="0" id="clue-28" aria-description="6 letters" class="active">
+                        <strong>31.</strong> Rapper in Three Six Mafia</li>
+
+                    <li role="button" tabindex="0" id="clue-16" aria-description="5 letters" class="">
+                        <strong>33.</strong> Alexa’s fav. food</li>
+
+                    <li role="button" tabindex="0" id="clue-46" aria-description="4 letters" class="">
+                        <strong>34.</strong> Allium almost the size of your forearm</li>
+
+                    <li role="button" tabindex="0" id="clue-7" aria-description="4 letters" class="">
+                        <strong>35.</strong> City where we learned to snowboard</li>
+
+                    <li role="button" tabindex="0" id="clue-4" aria-description="4 letters" class="">
+                        <strong>38.</strong> Our second date (SF bar with Chinese mai tais), ___ Lounge</li>
+
+                    <li role="button" tabindex="0" id="clue-21" aria-description="7 letters" class="">
+                        <strong>40.</strong> One of two old men that mock the Muppets</li>
+
+                    <li role="button" tabindex="0" id="clue-41" aria-description="7 letters" class="">
+                        <strong>41.</strong> Our home bar's website</li>
+
+                    <li role="button" tabindex="0" id="clue-35" aria-description="6 letters" class="">
+                        <strong>42.</strong> Jordan's favorite color</li>
+
+                    <li role="button" tabindex="0" id="clue-42" aria-description="8 letters" class="">
+                        <strong>43.</strong> Our rice cooker's website</li>
+
+                    <li role="button" tabindex="0" id="clue-33" aria-description="4 letters" class="">
+                        <strong>44.</strong> Name of Jordan's sophomore dorm room</li>
+
+                    <li role="button" tabindex="0" id="clue-0" aria-description="7 letters"><strong>45.</strong>
+                        Jordan's employer through which he met Alexa</li>
+
+                </ol>
+            </div>
+            <div id="down-box">
+                <h5>Down</h5>
+                <ol id="down" class="valid-parent">
+
+                    <li role="button" tabindex="0" id="clue-36" aria-description="6 letters"><strong>1.</strong>
+                        Jordan's 2019 Halloween costume: Britney ____ Spears</li>
+
+                    <li role="button" tabindex="0" id="clue-30" aria-description="7 letters" class="">
+                        <strong>2.</strong> Classically oversized and extra fried donut</li>
+
+                    <li role="button" tabindex="0" id="clue-29" aria-description="7 letters" class="">
+                        <strong>3.</strong> Rapper known as Mr. Worldwide</li>
+
+                    <li role="button" tabindex="0" id="clue-24" aria-description="8 letters"><strong>5.</strong> One of
+                        three animals on Jordan's tattoo</li>
+
+                    <li role="button" tabindex="0" id="clue-39" aria-description="6 letters"><strong>7.</strong> Israeli
+                        street food with fried eggplant</li>
+
+                    <li role="button" tabindex="0" id="clue-15" aria-description="9 letters" class="">
+                        <strong>8.</strong> Greek for the common people (brewery in Berkeley)</li>
+
+                    <li role="button" tabindex="0" id="clue-3" aria-description="12 letters" class="">
+                        <strong>10.</strong> Our first date (Invitae event)</li>
+
+                    <li role="button" tabindex="0" id="clue-1" aria-description="8 letters" class="">
+                        <strong>11.</strong> Alexa’s twin sister</li>
+
+                    <li role="button" tabindex="0" id="clue-38" aria-description="8 letters"><strong>14.</strong> Our
+                        traditional half-birthday treat</li>
+
+                    <li role="button" tabindex="0" id="clue-18" aria-description="10 letters" class="">
+                        <strong>17.</strong> Privacy-conscious search engine that Jordan is mocked for using</li>
+
+                    <li role="button" tabindex="0" id="clue-44" aria-description="7 letters" class="">
+                        <strong>18.</strong> Basic tap step</li>
+
+                    <li role="button" tabindex="0" id="clue-5" aria-description="6 letters"><strong>20.</strong>
+                        Name-name of Alexa's family's pet bunny</li>
+
+                    <li role="button" tabindex="0" id="clue-37" aria-description="9 letters"><strong>21.</strong> Place
+                        family comfort food from Marcella Hazan</li>
+
+                    <li role="button" tabindex="0" id="clue-12" aria-description="10 letters" class="">
+                        <strong>22.</strong> City where we biked everywhere</li>
+
+                    <li role="button" tabindex="0" id="clue-14" aria-description="7 letters"><strong>24.</strong> Our
+                        car's name</li>
+
+                    <li role="button" tabindex="0" id="clue-2" aria-description="5 letters"><strong>25.</strong> Our
+                        favorite celebrity chef, ____ Ottolenghi</li>
+
+                    <li role="button" tabindex="0" id="clue-34" aria-description="5 letters" class="">
+                        <strong>26.</strong> Alexa's favorite color</li>
+
+                    <li role="button" tabindex="0" id="clue-26" aria-description="9 letters"><strong>28.</strong> One of
+                        three animals on Jordan's tattoo</li>
+
+                    <li role="button" tabindex="0" id="clue-40" aria-description="6 letters" class="">
+                        <strong>32.</strong> "The genre of dance music developed in the UK in the early 1990s outta the
+                        rave scene and reggae sound system culture"</li>
+
+                    <li role="button" tabindex="0" id="clue-8" aria-description="8 letters" class="">
+                        <strong>36.</strong> City where we ate Lauretta Jean's pie</li>
+
+                    <li role="button" tabindex="0" id="clue-43" aria-description="6 letters" class="">
+                        <strong>37.</strong> Cooperative fireworks game that causes trouble for us</li>
+
+                    <li role="button" tabindex="0" id="clue-13" aria-description="7 letters"><strong>39.</strong> City
+                        where we lived with Kate and Brian</li>
+
+                </ol>
+            </div>
+        </div>
+    </page>
+</body>
+
+</html>
